@@ -4,3 +4,5 @@ venv
 *.ruff_cache
 *__pycache__
 src/static
+.venv
+**/.DS_Store
