@@ -1,0 +1,15 @@
+[flake8]
+max-line-length = 79
+indent-size = 4
+
+[pycodestyle]
+indent-style = space
+
+[pydocstyle]
+convention = google
+
+[flake8:lint]
+select = I,F,B,E,N,DJ
+
+[flake8:analysis]
+detect-string-imports = True

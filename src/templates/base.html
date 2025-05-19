@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Flow - Media Mates</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/imgs/theme/favicon.png' %}">
+    <!-- Template CSS  -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/widgets.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+
+<body class="home-page-1">
+    <div class="scroll-progress bg-grey-900"></div>
+    <!-- Start Preloader -->
+    <div class="preloader text-center">
+        <div class="loader"></div>
+    </div>
+    
+    <!--Offcanvas sidebar-->
+    {% include "includes/sidebar.html" %}
+    
+    <!-- Start Header -->
+    {% include "includes/header.html" %}
+
+    {% comment %} <div class="bg-square"></div> {% endcomment %}
+    <!--Start search form-->
+    {% include "includes/search.html" %}
+    
+    <!-- Start Main content -->
+    {% block main %}{% endblock  %}
+    {% block movies_list %}{% endblock  %}
+    {% block series_list %}{% endblock  %}
+    <!-- End Main content -->
+    <!--end site-bottom-->
+    <!-- Footer Start-->
+    {% block single %}{% endblock  %}
+    {% block register %}{% endblock  %}
+    {% block login %}{% endblock  %}
+    {% include "includes/footer.html" %}
+    <!-- End Footer -->
+    <div class="dark-mark"></div>
+    <!-- Vendor JS-->
+    <script src="{% static './assets/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static './assets/js/vendor/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static './assets/js/vendor/bootstrap.min.js' %}"></script>
+    <script src="{% static './assets/js/vendor/jquery.slicknav.js' %}"></script>
+    <script src="{% static './assets/js/vendor/slick.min.js' %}"></script>
+    <script src="{% static './assets/js/vendor/wow.min.js' %}"></script>
+    <script src="{% static './assets/js/vendor/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static './assets/js/vendor/jquery.theia.sticky.js' %}"></script>
+    <!-- Template  JS -->
+    <script src="{% static './assets/js/main.js' %}"></script>
+</body>
+</html>

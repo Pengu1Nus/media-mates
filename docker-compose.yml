@@ -1,0 +1,12 @@
+services:
+  backend:
+    build: .
+    container_name: media_mates_backend
+    ports:
+      - 8000:8000
+    volumes:
+      - ./src:/app/src
+    command: >
+        sh -c "python manage.py runserver 0.0.0.0:8000"
+    # command: >
+    #       sh -c "gunicorn --bind 0.0.0.0:8000 app.wsgi --reload"

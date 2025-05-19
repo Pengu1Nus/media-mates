@@ -1,0 +1,325 @@
+{% extends "base.html" %}
+{% load static %}
+<!--Offcanvas sidebar-->
+{% include "includes/sidebar.html" %}
+<!-- Start Header -->
+{% include "includes/header.html" %}
+<!--Start search form-->
+{% include "includes/search.html" %}
+<!-- Start Main content -->
+{% block series_list%}
+<main>
+  <div class="recent-posts pt-65 pb-65 position-relative">
+    <div class="container">
+      <div class="row">
+        {% comment %} <article class="col-md-12 first-article text-center mb-50">
+          <div class="post-content">
+            <div class="post-meta-1 mb-20">
+              <a
+                href="category.html"
+                class="tag-category bg-brand-1 shadown-1 text-dark button-shadow hover-up-3"
+                tabindex="0"
+                >Lifestyle</a
+              >
+              <span class="post-date text-muted font-md"
+                >September 15, 2021</span
+              >
+            </div>
+            <h1 class="post-title mb-30 fw-700">
+              <a href="single.html" tabindex="0">
+                30 Best Lifestyle Blogs to Follow in 2021
+              </a>
+            </h1>
+            <div class="post-excerpt text-grey-400 mb-30">
+              Tempus ultricies augue luctus et ut suscipit. Morbi arcu, ultrices
+              purus dolor erat bibendum sapien metus.
+            </div>
+          </div>
+          <figure class="border-radius-10 hover-up-3 mb-0">
+            <a href="single.html"
+              ><img
+                src="{% static 'assets/imgs/news/news-16.jpg' %}"
+                alt=""
+                class="border-radius-10"
+            /></a>
+          </figure>
+        </article> {% endcomment %}
+        <div class="col-md-12 loop-list loop-list-style-1 loop-list-2 mb-md-30">
+          <article
+            class="hover-up-3 border-radius-10 overflow-hidden wow fadeIn animated"
+          >
+            <div class="row">
+              <div class="col-md-5">
+                <div
+                  class="post-thumb position-relative"
+                  style="background-image: url({% static 'assets/imgs/news/thumb-3.jpg'%})"
+                >
+                  <a class="img-link" href="single.html"></a>
+                </div>
+              </div>
+              <div class="col-md-7 align-self-center">
+                <div class="post-content pr-30">
+                  <div class="post-meta-1 mb-20">
+                    <span
+                      class="tag-category bg-brand-1 shadown-1 text-dark"
+                      tabindex="0"
+                      >По книге</span
+                    >
+                    <span
+                    class="tag-category bg-brand-1 shadown-1 text-dark"
+                    tabindex="0"
+                    >Netflix</span
+                    >
+                  </div>
+                  <h3 class="post-title mb-40">
+                    <a class="" href="single.html"
+                      >Сто лет одиночества</a
+                    >
+                  </h3>
+                  <div class="d-flex">
+                    <div class="post-meta-2 font-md d-flex w-70">
+                      <span
+                        class="align-self-center"
+                        tabindex="0"
+                      >
+                        <img src="{% static 'assets/imgs/authors/author.jpg' %}" alt="" />
+                    </span>
+                      <div class="mb-0">
+                        <span tabindex="0">
+                          <strong class="author-namge">Автор поста</strong></span
+                        >
+                        {% comment %} <p class="post-on font-sm text-grey-400 mb-0">
+                          5 minutes ago
+                        </p> {% endcomment %}
+                      </div>
+                    </div>
+                    <div
+                      class="text-right post-list-icon align-self-center w-30"
+                    >
+                      <a><i class="elegant-icon icon_ribbon_alt"></i></a>
+                      <a><i class="elegant-icon icon_heart_alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          {% comment %} <article
+            class="hover-up-3 border-radius-10 overflow-hidden wow fadeIn animated"
+          >
+            <div class="row">
+              <div class="col-md-5">
+                <div
+                  class="post-thumb position-relative"
+                  style="background-image: url({% static 'assets/imgs/news/thumb-8.jpg' %})"
+                >
+                  <a class="img-link" href="single.html"></a>
+                </div>
+              </div>
+              <div class="col-md-7 align-self-center">
+                <div class="post-content pr-30">
+                  <div class="post-meta-1 mb-20">
+                    <a
+                      href="category.html"
+                      class="tag-category bg-success shadown-1 text-dark button-shadow hover-up-3"
+                      tabindex="0"
+                      >Travel</a
+                    >
+                  </div>
+                  <h3 class="post-title mb-40">
+                    <a class="" href="single.html"
+                      >After a Few Dates, They Traveled to the Other Side of the
+                      World</a
+                    >
+                  </h3>
+                  <div class="d-flex">
+                    <div class="post-meta-2 font-md d-flex w-70">
+                      <a
+                        class="align-self-center"
+                        href="page-author.html"
+                        tabindex="0"
+                      >
+                        <img src="assets/imgs/authors/author-2.jpg" alt="" />
+                      </a>
+                      <div class="mb-0">
+                        <a href="page-author.html" tabindex="0">
+                          <strong class="author-namge">Aten Joun</strong></a
+                        >
+                        <p class="post-on font-sm text-grey-400 mb-0">
+                          12 minutes ago
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="text-right post-list-icon align-self-center w-30"
+                    >
+                      <a><i class="elegant-icon icon_ribbon_alt"></i></a>
+                      <a><i class="elegant-icon icon_heart_alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article> {% endcomment %}
+          {% comment %} <article
+            class="hover-up-3 border-radius-10 overflow-hidden wow fadeIn animated"
+          >
+            <div class="row">
+              <div class="col-md-5">
+                <div
+                  class="post-thumb position-relative"
+                  style="background-image: url(assets/imgs/news/thumb-5.jpg)"
+                >
+                  <a class="img-link" href="single.html"></a>
+                </div>
+              </div>
+              <div class="col-md-7 align-self-center">
+                <div class="post-content pr-30">
+                  <div class="post-meta-1 mb-20">
+                    <a
+                      href="category.html"
+                      class="tag-category bg-primary shadown-1 text-dark button-shadow hover-up-3"
+                      tabindex="0"
+                      >Health</a
+                    >
+                  </div>
+                  <h3 class="post-title mb-40">
+                    <a class="" href="single.html"
+                      >Jessamyn Stanley's 5-Minute Yoga for Beginners</a
+                    >
+                  </h3>
+                  <div class="d-flex">
+                    <div class="post-meta-2 font-md d-flex w-70">
+                      <a
+                        class="align-self-center"
+                        href="page-author.html"
+                        tabindex="0"
+                      >
+                        <img src="assets/imgs/authors/author-3.jpg" alt="" />
+                      </a>
+                      <div class="mb-0">
+                        <a href="page-author.html" tabindex="0">
+                          <strong class="author-namge">J. Anna</strong></a
+                        >
+                        <p class="post-on font-sm text-grey-400 mb-0">
+                          3 days ago
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="text-right post-list-icon align-self-center w-30"
+                    >
+                      <a><i class="elegant-icon icon_ribbon_alt"></i></a>
+                      <a><i class="elegant-icon icon_heart_alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article> {% endcomment %}
+          {% comment %} <article
+            class="hover-up-3 border-radius-10 overflow-hidden wow fadeIn animated"
+          >
+            <div class="row">
+              <div class="col-md-5">
+                <div
+                  class="post-thumb position-relative"
+                  style="background-image: url(assets/imgs/news/thumb-6.jpg)"
+                >
+                  <a class="img-link" href="single.html"></a>
+                </div>
+              </div>
+              <div class="col-md-7 align-self-center">
+                <div class="post-content pr-30">
+                  <div class="post-meta-1 mb-20">
+                    <a
+                      href="category.html"
+                      class="tag-category bg-danger shadown-1 text-dark button-shadow hover-up-3"
+                      tabindex="0"
+                      >Kitchen</a
+                    >
+                  </div>
+                  <h3 class="post-title mb-40">
+                    <a class="" href="single.html"
+                      >How an MS Diagnosis Changed My Relationship With Food</a
+                    >
+                  </h3>
+                  <div class="d-flex">
+                    <div class="post-meta-2 font-md d-flex w-70">
+                      <a
+                        class="align-self-center"
+                        href="page-author.html"
+                        tabindex="0"
+                      >
+                        <img src="assets/imgs/authors/author-4.jpg" alt="" />
+                      </a>
+                      <div class="mb-0">
+                        <a href="page-author.html" tabindex="0">
+                          <strong class="author-namge">Kasumi</strong></a
+                        >
+                        <p class="post-on font-sm text-grey-400 mb-0">
+                          September 19, 2021
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="text-right post-list-icon align-self-center w-30"
+                    >
+                      <a><i class="elegant-icon icon_ribbon_alt"></i></a>
+                      <a><i class="elegant-icon icon_heart_alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article> {% endcomment %}
+        </div>
+      </div>
+      <div class="text-center mt-65">
+        <button class="btn btn-lg bg-dark text-white d-inline-block">
+          Load more posts
+        </button>
+      </div>
+    </div>
+  </div>
+  <section class="newsletter bg-brand-3 pt-100 pb-100">
+    <div class="container">
+      <div class="position-relative">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="header-title-2 mb-65">
+              <h4 class="mb-0 text-grey-400 wow fadeIn animated">
+                <img src="assets/imgs/theme/svg/send.svg" alt="" />
+                <span>Subscribe</span>
+              </h4>
+              <h3 class="font-heading wow fadeIn animated">
+                to Our Newsletter
+              </h3>
+            </div>
+            <form class="form-subcriber mt-30 d-flex wow fadeIn animated">
+              <input
+                type="email"
+                class="form-control bg-white font-small"
+                placeholder="Enter your email"
+              />
+              <button class="btn bg-dark text-white" type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <img
+          src="assets/imgs/theme/sketch-1.png"
+          alt=""
+          class="sketch-1 wow fadeIn animated"
+        />
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+<!-- End Main content -->
+<!--end site-bottom-->
+<!-- Footer Start-->
+{% include "includes/footer.html" %}
+<!-- End Footer -->

@@ -1,0 +1,6 @@
+venv
+.git
+.env
+*.ruff_cache
+*__pycache__
+src/static
